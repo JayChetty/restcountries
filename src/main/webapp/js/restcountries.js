@@ -51,7 +51,12 @@ $(function () {
 	};
 	
 	var ajax = function(url, callback) {
-		if(url.indexOf('restcountries.eu') != 7 && url.indexOf('restcountries.eu') != 11 && url.indexOf('localhost') != 7)
+		if(
+			url.indexOf('restcountries.eu') != 7 &&
+			url.indexOf('restcountries.eu') != 8 &&
+			url.indexOf('restcountries.eu') != 11 &&
+			url.indexOf('restcountries.eu') != 12 &&
+			url.indexOf('localhost') != 7)
 			return;
 		
 		$.ajax({
